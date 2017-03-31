@@ -1,0 +1,18 @@
+token: ""  # Discord login token
+
+features:  # Comment out any features you don't want
+- attachments  # Saves all file attachments you're privy to
+- eval  # Python /eval command
+- quote  # /quote <message id> command that uses embeds
+- repost  # /repost <message id> command that does not use embeds
+- logs  # /logs command that tries to download all the messages in the current channel and upload them to gist.github.com
+
+# Discord statuses have an order of precedence. Any client setting one of the following statuses will override any clients
+# setting any statuses to the right.
+#
+# online -> idle -> dnd -> invisible
+#
+# If you want to make sure the bot doesn't force you to appear online all the time, set one of the
+# other statuses below.
+
+status: dnd
