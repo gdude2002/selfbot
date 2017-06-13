@@ -56,7 +56,7 @@ class Client(discord.client.Client):
         else:
             logger = get_logger(message.server.name)
 
-        if int(message.author.id) == self.user.id:
+        if message.author.id == self.user.id:
             if self.has_feature("logs") and message.content.lower().startswith("/logs"):
                 _triggered_message = message
                 await self.edit_message(_triggered_message, "Saving all previous messages for the channel...")
